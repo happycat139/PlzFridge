@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+
+	<select id="allBoard" resultType="BoardDTO">
+		SELECT a.b_idx,
+		a.user_id,
+		u.user_profile_img as img,
+		a.b_file,
+		a.b_content,
+		IFNULL(SUM(DISTINCT CASE WHEN e.emoji_type = 'like' THEN 1 ELSE 0 END), 0) AS b_likes,
+		IFNULL(SUM(DISTINCT CASE WHEN e.emoji_type = 'fun' THEN 1 ELSE 0 END),
+		0) AS b_funs,
+		GROUP_CONCAT(DISTINCT b.cmt_content ORDER BY b.created_at DESC SEPARATOR '\n') AS comments
+		FROM t_board a
+		LEFT JOIN t_comment b ON a.b_idx = b.b_idx
+		LEFT JOIN t_emoji e ON a.b_idx = e.b_idx
+		LEFT JOIN t_user u ON a.user_id = u.user_id
+		GROUP BY a.b_idx
+		ORDER BY a.created_at DESC;
+	</select>
+
+	<!-- 게시글 삽입 -->
+	<insert id="writeBoard" parameterType="BoardDTO">
+		INSERT INTO t_board
+		(user_id, b_content,b_file)
+		VALUES (#{user_id},#{b_content},#{b_file})
+	</insert>
+
+	<select id="myPost" parameterType="String" resultType="BoardDTO">
+		SELECT b_idx,b_file
+		FROM t_board
+		WHERE user_id = #{user_id}
+	</select>
+
+	<delete id="deletePost" parameterType="map">
+		DELETE FROM t_board
+		WHERE b_idx = #{postId} AND user_id = #{userId}
+	</delete>
+	<select id="userboard" parameterType="map" resultType="BoardDTO">
+
+		select * from t_board where user_id = #{userId} and b_idx = #{bIdx};
+
+	</select>
+
+
+</mapper> 

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*  */
+.HashTag-block{
+	display: inline-block;
+	margin: 0 2px 12px;
+	padding:2px;
+	border: 1px solid black;
+}
+.search-ingre {
+	border: 0;
+}
+
+.search-ingre .tagify__input {
+	order: -1;
+	flex: 100%;
+	border: 1px solid var(--tags-border-color);
+	margin-bottom: 1em;
+	transition: .1s;
+	
+}
+
+.search-ingre.tagify__input:hover {
+	border-color: var(--tags-hover-border-color);
+}
+
+.search-ingre.tagify--focus .tagify__input {
+	transition: 0s;
+	border-color: var(--tags-focus-border-color);
+}
+.hashtagbtn{
+   
+    border: none;
+    background-color: white; 
+}

@@ -1,0 +1,202 @@
+/* 스타일 태그로 관리
+      : 해당 페이지에만 존재하는 .class선택자 & 명시도 조정용 #id선택자 */
+
+/* 💡이 문서에는 꼭 아래 조정값을 적용하기! */
+/* 💡전역 class 이지만, 이 속성을 삭제하거나 설정을 변경하지 마세요. */
+.globals-content_container {
+  /* 범위 구분용 임의 지정 색상: 몸통 */
+  padding-bottom: 5px;
+  /* background-color: lavender; */
+}
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 뒤로가기('X') 버튼 */
+
+.sel_Profile_Xbtn-container {
+  /* 엑스(뒤로가기) 버튼 컨테이너 */
+  padding-right: 15px;
+  padding-top: 10px;
+  /* 내부 정렬 : 'x' 중앙 고정 */
+  display: flex;
+  flex-direction: row-reverse;
+  /* 임의 설정 */
+  /* background-color: indianred; */
+}
+
+.sel_Profile_Xbtn {
+  /* 엑스(뒤로가기) 버튼 */
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50px;
+  border: 1.6px solid darkgray;
+  box-shadow: 0px 0px 4px rgba(65, 65, 65, 0.35);
+  /* 내부 정렬 : 'x' 중앙 고정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 임의 설정 */
+  /* background-color: lightcyan; */
+}
+
+.sel_Profile_Xbtn > span {
+  /* 엑스(뒤로가기) 버튼 span */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5.5px;
+  /* 폰트 설정 */
+  font-family: Open Sans;
+  font-size: medium;
+  color: #5a5a5a;
+  /* 임의 설정 */
+  /* background-color: darkmagenta; */
+}
+
+.sel_Profile_Xbtn > a {
+  /* 엑스(뒤로가기) 버튼 span */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5.5px;
+  /* a태그 특성 */
+  text-decoration: none;
+  cursor: pointer;
+  /* 폰트 설정 */
+  font-family: Open Sans;
+  font-size: medium;
+  color: #5a5a5a;
+  text-decoration: none;
+  cursor: pointer;
+  /* 임의 설정 */
+  /* background-color: darkmagenta; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+.sel_Profile_Txt-container {
+  /* '프로필을 선택해주세요' 문구 컨테이너 */
+  margin-bottom: 10px;
+  /* 임의 설정 */
+  /* background-color: darkturquoise; */
+}
+
+h3 {
+  /* '프로필을 선택해주세요' 문구 */
+  margin: 10px;
+  padding: 0;
+  font-weight: 500;
+  /* 임의 설정 */
+  /* background-color: darkslategray; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 프로필 이미지 고르기 */
+
+.sel_Profile_IMG-container {
+  /* 프로필 사진 예시 전체 컨테이너 */
+  min-height: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* 임의 설정 */
+  /* background-color: darkslateblue; */
+}
+
+.sel_Profile_IMG_individual-container {
+  /* 프로필 사진 예시 개별 컨테이너 */
+  width: 140px;
+  height: 140px;
+  padding: 0;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 임의 설정 */
+  /* background-color: darkkhaki; */
+}
+
+.sel_Profile_IMG_individual-Btn {
+  /* 버튼-예시 프로필 사진 */
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+  padding: 0;
+  margin: 0;
+  /* ❗버튼을 '클릭'하면 테두리(bg-color)가 생기는 JavaScript */
+  /* background-color:lightpink; */
+  border: none;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 임의 설정 */
+  /* background-color: darkcyan; */
+}
+
+.sel_Profile_IMG {
+  /* IMG-예시 프로필 사진 */
+  width: 120px;
+  height: auto;
+  border: none;
+  border-radius: 80px;
+  /* 임의 설정 */
+  /* background-color: darkorchid; */
+}
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 '선택 완료' 버튼 */
+
+.sel_Profile_Choice_btn-container {
+  /* '선택 완료' 버튼 컨테이너 */
+  padding-top: 10px;
+  margin-bottom: 5px;
+  /* 임의 설정 */
+  /* background-color: darkgoldenrod; */
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.sel_Profile_Choice_btn {
+  /* '선택 완료' 버튼 */
+  width: 140px;
+  height: 38px;
+  background-color: #fdf9ce;
+  margin-bottom: 0;
+  /* 내부 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 20px;
+  /* 전역 btn 유래 속성 */
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #6b6a6a98;
+  color: #777676;
+  box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* 임의 설정 */
+  /* background-color: darkgreen; */
+}
+
+.sel_Profile_Choice_btn > span {
+  /* '선택 완료' 버튼 span */
+  width: 70px;
+  /* 임의 설정 */
+  /* background-color: darkseagreen; */
+}

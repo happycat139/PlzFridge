@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="RecipeDAO">
+
+	<select id="recipeName" resultType="Model.RecipeDTO">
+		select * from t_recipe where recipe_name=#{recipe_name} or recipe_img1=#{recipe_img1};
+	</select>
+
+
+
+</mapper> 

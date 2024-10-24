@@ -1,0 +1,146 @@
+#JoinPage-space {
+  /* Join 페이지 지역 스페이스 */
+  min-height: 659px;
+}
+
+#joinPageLogo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 220px;
+}
+
+#joinPageLogoImg {
+  margin-top: 10px;
+  width: 120px;
+}
+
+#joinPageLogoTitle {
+  margin-top: 15px;
+  display: inline-block;
+  width: 150px;
+  
+}
+
+.joinPageInput {
+  /* 이름 & ID 입력 */
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.joinPageInput_2 {
+  /* PW & 이메일 입력 */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#JoinPageInputEmail {
+  margin-top: 15px;
+}
+
+.JoinPageIdCheck-container {
+  margin-top: 15px;
+  /* 내부 정렬 */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* 문구와 버튼 사이의 간격 */
+  gap: 20px;
+  flex-direction: row-reverse;
+  /* 임의 설정 */
+  /* background-color: cornsilk; */
+}
+
+#joinPageIdCheckBtn {
+  width: 110px;
+  height: 35px;
+  margin-top: 1px;
+  /* 버튼의 우측 간격 */
+  margin-right: 10px;
+  /* 버튼 내 텍스트 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#joinPageIdCheckBtnTxt {
+  /* 텍스트-ID중복체크버튼 */
+  font-size: large;
+  /* color: black; */
+}
+
+#joinPageIdCheckBtn + div {
+  /* '사용 가능한/불가능한 아이디 입니다.' 알림 문구 컨테이너 */
+  width: 185px;
+  padding-left: 0px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  /* 임의 설정 */
+  /* background-color: bisque; */
+}
+
+.idc_Success {
+  color: blue;
+  font-size: 14px;
+}
+
+.idc_Fail {
+  color: red;
+  font-size: 14px;
+}
+
+#joinPageSubmit {
+  width: 215px;
+  height: 55px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+#joinPageSubmitTxt {
+  /* 텍스트-로그인 버튼 */
+  font-size: x-large;
+  /* color: black; */
+}
+
+.JoinPage_SelProfile_Btn {
+  width: 140px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  /* 전역 속성 .btn 유래 설정 */
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #6b6a6a98;
+  box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#profileSettingBtn{
+	width: 140px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  /* 전역 속성 .btn 유래 설정 */
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #6b6a6a98;
+  box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.JoinPage_SelProfile_Btn_Txt {
+  /* 폰트 설정 */
+  color: #777676;
+  font-size: 9;
+  font-family: "BMHANNAPro";
+}

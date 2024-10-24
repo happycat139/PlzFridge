@@ -1,0 +1,83 @@
+/* ✨ Outer Frame 속성 ✨ */
+
+/* 전역 컨테이너: 가장 바깥-1 : bg */
+.globals-container {
+  background-color: whitesmoke;
+  /* 서비스 스페이스가 항상 화면 중앙에 고정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 뷰포트의 전체 높이 */
+  min-height: 100vh;
+}
+
+/* 전역 컨테이너: 가장 바깥-2 : 일반형 */
+/* 💡 '상하단바'가 없는 페이지 */
+.globals-space {
+  background-color: white;
+  border: 5px solid black;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  /* 화면의 페이지 가로 380px */
+  width: 340px;
+  min-height: 680px;
+  /* 패딩 상좌우 */
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* space를 기본 위치(화면 중앙)에 고정 */
+  position: relative;
+  margin: 0 auto;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 전역컨테이너: 가장바깥-2 : 메뉴탭 보유형 */
+/* 💡 '상하단바'가 있는 페이지 */
+.globals-space_withBar {
+padding : 0px 3px;
+  background-color: white;
+  border: 5px solid black;
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  /* 화면의 페이지 가로 380px */
+  width: 380px;
+  min-height: 680px;
+  /* 패딩: ⚠️'메뉴탭 보유형' 페이지엔 좌우 padding 없음!⚠️ */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* space를 기본 위치(화면 중앙)에 고정 */
+  position: relative;
+  margin: 0 auto;
+
+  /* 🧡사용 예시
+  <div id="globals-space_withBar" align="center">
+  </div> */
+}
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡light-페이지의 서비스창 컨테이너 */
+.lightPage-container {
+  width: 340px;
+  min-height: 400px;
+  height: auto;
+  border: 3px solid lightgray;
+  box-shadow: 0px 0px 8px rgba(65, 65, 65, 0.25);
+  border-radius: 20px;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  /* 임의 설정 */
+  /* background-color: antiquewhite; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 브라우저 기본값 여백 제거 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}

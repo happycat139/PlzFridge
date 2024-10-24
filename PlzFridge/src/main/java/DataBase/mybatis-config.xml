@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="DataBase/db.properties"></properties>
+	<typeAliases>
+		<typeAlias type="Model.BoardDTO" alias="BoardDTO" />
+		<typeAlias type="Model.CommentDTO" alias="CommentDTO" />
+		<typeAlias type="Model.EmojiDTO" alias="EmojiDTO" />
+		<typeAlias type="Model.RecipeDTO" alias="Recipe" />
+		<typeAlias type="Model.FavoriteDTO" alias="Favorite" />
+		<typeAlias type="Model.UserDTO" alias="UserDTO" />
+		<typeAlias type="Model.BadgeDTO" alias="BadgeDTO"/>
+		<typeAlias type="Model.UserBadgeDTO" alias="UserBadgeDTO"/>
+		<typeAlias type="Model.TalkDTO" alias="TalkDTO"/>
+		
+		<!-- 삽입필요 : 나머지 DTO들 추가해줘여함!!!!!! -->
+	
+		
+		<typeAlias type="Model.BadgeDTO" alias="BadgeDTO"/>
+		<typeAlias type="Model.UserBadgeDTO" alias="UserBadgeDTO"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		
+		<mapper resource="DataBase/BoardMapper.xml" />
+		<mapper resource="DataBase/CommentMapper.xml" />
+		<mapper resource="DataBase/EmojiMapper.xml" />
+		<mapper resource="DataBase/HomeMapper.xml" />
+		<mapper resource="DataBase/FavoriteMapper.xml" />
+		<mapper resource="DataBase/UserMapper.xml" />
+		<mapper resource="DataBase/RecipeMapper.xml" />
+		<mapper resource="DataBase/TalkMapper.xml" />
+		
+		<!-- 삽입필요 : -->
+		<mapper resource="DataBase/MyPageMapper.xml"/>
+
+	</mappers>
+</configuration>

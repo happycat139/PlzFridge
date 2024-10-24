@@ -1,0 +1,69 @@
+/* 💡이하 버튼 관련 속성 =========================== */
+/* 스타일콘텐츠-디자인: '버튼' */
+.btn {
+  /* btn사이즈 기본값 (💡#id선택자로 명시도 조정!) */
+  width: 75px;
+  height: 35px;
+
+  /* btn 기본 설정 (❗border-color 변경 가능성 있음!) */
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #6b6a6a98;
+  color: #777676;
+  box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+
+  /* ❗변동 가능성 있는 설정 */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.b_green {
+  background-color: #c2ddd6;
+  color: #414141;
+}
+
+.b_pink {
+  background-color: #ffd6c4;
+}
+
+/* 💡이하 input 관련 속성 =========================== */
+/* 스타일콘텐츠-디자인: 'input' */
+.input_container > input {
+  /* 💡instagram.css 유래 속성 설정 */
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  width: 300px;
+  height: 46px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  /* 입력창 세로로 쌓기 */
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+
+  /* .design_text */
+  font-family: "BMHANNAPro";
+  font-size: 18;
+}
+
+/* ================================================= */
+/* ⛔ 폐기될 가능성 있음 */
+/* 스타일콘텐츠-디자인: 정보입력창-핑크 */
+.inputBox {
+  width: 150px;
+  height: 35px;
+  background-color: pink;
+  border-radius: 10%;
+  padding: 2px;
+  align-items: center;
+}

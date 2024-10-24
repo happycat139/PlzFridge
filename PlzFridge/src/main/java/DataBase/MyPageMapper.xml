@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MyPageMapper">
+
+
+<!-- 	<select id="getProfileImage" resultType="String">
+		SELECT user_profile_img
+		AS userProfileImg
+		FROM t_user
+		WHERE user_id = #{userId}
+	</select>
+
+	
+
+	<select id="getUserName" resultType="String">
+		SELECT user_name AS userName
+		FROM t_user
+		WHERE user_id = #{userId}
+	</select> -->
+	
+	<insert id="insertBadge1" parameterType="String">
+      INSERT INTO t_user_badge
+      (user_id, badge_idx)
+      SELECT #{userId}, 1
+      FROM DUAL
+      WHERE NOT EXISTS (
+      SELECT 1
+      FROM t_user_badge ub
+      WHERE ub.user_id = #{userId}
+      AND ub.badge_idx = 1
+      );
+   </insert>
+
+   <insert id="insertBadge2" parameterType="String">
+      INSERT INTO t_user_badge
+      (user_id, badge_idx)
+      SELECT #{userId}, 2
+      FROM DUAL
+      WHERE EXISTS (
+      SELECT
+      1
+      FROM t_board b
+      WHERE b.user_id = #{userId}
+      GROUP BY b.user_id
+      HAVING
+      COUNT(*) >= 1
+      )
+      AND NOT EXISTS (
+      SELECT 1
+      FROM t_user_badge ub
+      WHERE
+      ub.user_id = #{userId}
+      AND ub.badge_idx = 2
+      );
+   </insert>
+
+   <insert id="insertBadge3" parameterType="String">
+      INSERT INTO t_user_badge
+      (user_id, badge_idx)
+      SELECT #{userId}, 3
+      FROM DUAL
+      WHERE EXISTS (
+      SELECT
+      1
+      FROM t_board b
+      WHERE b.user_id = #{userId}
+      GROUP BY b.user_id
+      HAVING
+      COUNT(*) >= 5
+      )
+      AND NOT EXISTS (
+      SELECT 1
+      FROM t_user_badge ub
+      WHERE
+      ub.user_id = #{userId}
+      AND ub.badge_idx = 3
+      );
+   </insert>
+
+   <insert id="insertBadge4" parameterType="String">
+      INSERT INTO t_user_badge
+      (user_id, badge_idx)
+      SELECT #{userId}, 4
+      FROM DUAL
+      WHERE EXISTS (
+      SELECT 1
+      FROM t_emoji e
+      WHERE e.user_id = #{userId}
+      AND e.emoji_type = 'like'
+      GROUP BY e.user_id
+      HAVING COUNT(*) >= 5
+      )
+      AND NOT EXISTS (
+      SELECT 1
+      FROM
+      t_user_badge ub
+      WHERE ub.user_id = #{userId}
+      AND ub.badge_idx = 4
+      );
+   </insert>
+
+   <insert id="insertBadge5" parameterType="String">
+      INSERT INTO t_user_badge
+      (user_id, badge_idx)
+      SELECT #{userId}, 5
+      FROM DUAL
+      WHERE EXISTS (
+      SELECT 1
+      FROM t_emoji e
+      WHERE e.user_id = #{userId}
+      AND e.emoji_type = 'fun'
+      GROUP BY e.user_id
+      HAVING COUNT(*) >= 5
+      )
+      AND NOT EXISTS (
+      SELECT 1
+      FROM
+      t_user_badge ub
+      WHERE ub.user_id = #{userId}
+      AND ub.badge_idx = 5
+      );
+   </insert>
+
+
+   <select id="showBadge" parameterType="String"
+      resultType="BadgeDTO">
+      SELECT a.badge_name AS badgeName, a.badge_img AS badgeImg
+      FROM t_badge a
+      JOIN t_user_badge b ON a.badge_idx = b.badge_idx
+      WHERE
+      b.user_id = #{userId};
+   </select>
+	
+
+
+
+</mapper>

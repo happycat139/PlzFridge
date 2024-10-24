@@ -1,0 +1,305 @@
+/* 💡 Home만의 Header */
+#homePage-header {
+	background-color: white;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	/* header 내부 정렬 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* div 내부에서 스크롤 시 고정 */
+	position: relative;
+	top: 0;
+	/* 중첩 요소의 stack order */
+	z-index: 10;
+	/* header 내 로고 간격 */
+	gap: 10px;
+}
+
+/* 오른쪽으로 이동할 이미지 */
+#cooktalk {
+	position: absolute;
+	right: 20px; /* 오른쪽 끝에서 20px 떨어짐 */
+}
+
+.logo_container {
+	display: inline-block; /* 로고와 타이틀을 인라인 블록으로 처리 */
+}
+
+#cooktalk img {
+	border-radius: 10px; /* 이미지 모서리를 둥글게 */
+}
+
+.Home-header_Title {
+	margin-left: -7px; /* 텍스트를 로고와 더 가까이 붙임 */
+	margin-right: 7px; /* 텍스트와 오른쪽 이미지 사이 간격을 줄임 */
+}
+
+.Home-header_Title {
+	/* Home 헤더-타이틀 폰트 설정
+    (span으로 된 컨테이너) */
+	font-size: medium;
+	font-weight: 600;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 Home만의 Btn */
+.HomePageBtn {
+	/* 전역 btn 클래스 속성 유래 */
+	border-radius: 20px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#HomePageAddSearch-container {
+	/* 식재료-레시피 검색 영역 전체 */
+	/* 내용이 늘어날 때 높이 자동 증가 */
+	height: auto;
+	min-height: 250px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#HomePageInputAdd-container {
+	/* 식재료 입력칸 컨테이너 */
+	padding-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	text-align: center;
+	gap: 10px;
+}
+
+#ingredientInput {
+	/* input:-'식재료' 입력하기 */
+	background-color: white;
+	min-height: auto;
+	font-size: x-large;
+	margin-bottom: 5px;
+	/* input칸 테두리 없애기 */
+	border: none;
+	outline: none;
+	/* '재료입력' 폰트 */
+	font-family: sanchez;
+	font-size: 18px;
+	font-weight: 550;
+	/* input칸 시작 위치 */
+	width: 260px;
+}
+
+#HomePage-AddIngreInput::placeholder {
+	/* "재료를 입력하세요" placeholder */
+	font-family: "BMHANNAPro";
+	font-size: 18px;
+	font-weight: 600;
+	/* placeholder 시작 위치 */
+	padding-left: 3px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#HomePageAddBtn {
+	background-color: white;
+	/* 식재료 입력 추가 버튼 */
+	border: none;
+	margin-right: 30px;
+	height: auto;
+	width: auto;
+	padding: 0;
+	/* 버튼 내 이미지를 중앙 정렬 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#HomePageAddBtnImg {
+	/* 식재료 추가 버튼 '+' 이미지 */
+	width: 15px;
+	height: auto;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+hr {
+	margin-top: 0;
+	margin-bottom: 15px;
+	border: 1.2px solid gray;
+}
+
+#HomePage_InputAddHash-container {
+	background-color: white;
+	/* background-color:azure; */
+	box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+	/* 인풋+Add버튼+해쉬태그 영역 */
+	border: 1px solid black;
+	border-radius: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	/* 내용이 늘어날 때 높이 자동 증가 */
+	height: auto;
+	min-height: 180px;
+	/* '레시피 검색' 버튼과의 간격 */
+	margin-bottom: 15px;
+}
+
+.HashTag-block {
+	/* 추가된 식재료 '#당근' */
+	min-width: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	/* 블록 간 간격과 정렬 */
+	gap: 15px;
+	display: inline-block;
+	text-align: center;
+	/* 커서 변형 */
+	cursor: pointer;
+}
+
+.HashTag-block button {
+	border: none;
+	background-color: white;
+}
+
+#HomePageHash-container {
+	/* 추가된 식재료가 해쉬태그로 담기는 영역 */
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	/* 요소들이 한 줄에 맞지 않으면 자동으로 줄바꿈 */
+	flex-wrap: wrap;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#HomePage_SearchBtn-container {
+	/* Search-레시피검색 버튼 컨테이너 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	/* '레시피 검색' 버튼의 높이 만큼만 설정 */
+	height: auto;
+}
+
+#HomePageSearchBtn {
+	/* '레시피 검색' 버튼 */
+	background-color: #fdf9ce;
+	box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+	width: 155px;
+	height: 38px;
+	margin-top: 5px;
+	color: #3c3c3c;
+	/* 내부 정렬 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 600;
+	font-size: large;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡이하 HomePageBest */
+#HomePageBestRecipe-container {
+	/* 베스트 레시피 노출구역 전체 컨테이너 */
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	height: auto;
+}
+
+#HomePageBestTl-container {
+	/* '베스트 레시피' 타이틀 구역 컨테이너 */
+	text-align: left;
+	width: 100%;
+}
+
+#HomePageBestTlTxt {
+	/* 'Best' 글씨 */
+	font-family: "BMJUA";
+	font-weight: 600;
+	font-size: xx-large;
+	padding-left: 5px;
+}
+
+#hr_HomePageBestRecipe {
+	/* hr '베스트 레시피' 구분선 */
+	width: 100%;
+	margin-top: 5px;
+	border: 1px solid lightgray;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡이하 HomePageRecipe */
+#HomePage-BestRecipeContents-container {
+	/* '베스트 레시피' 게시글 전개구역 컨테이너 */
+	width: 100%;
+	height: auto;
+	gap: 15px;
+	/* '내부정렬 좌=>우 + 위=>아래' */
+	display: flex;
+	justify-content: center;
+	/* 요소들이 한 줄에 맞지 않으면 자동으로 줄바꿈 */
+	flex-wrap: wrap;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.HomePage-BestRecipe_Individual {
+	/* '베스트 레시피' 게시글 개별 컨테이너 */
+	display: inline-block;
+	flex-direction: column;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.HomePageBestRecipe_Img-container {
+	/* '베스트 레시피' 게시글 이미지 컨테이너 */
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 이미지 칸 규격 140px 통일 */
+	height: 140px;
+	width: 140px;
+	overflow: hidden;
+	/* 모서리 깎기 */
+	border-radius: 5px;
+	/* 사진 크기에 따른 여백 */
+	background-color: whitesmoke;
+}
+
+.HomePageBestRecipe_Img {
+	/* 이미지 칸 규격 140px 통일 */
+	width: 250px;
+	height: auto;
+	/* 모서리 깎기 */
+	border-radius: 6px;
+}
+
+.HomePageBestRecipe_Txt-container {
+	/* '베스트 레시피' 게시글 미리보기 텍스트 컨테이너 */
+	width: 140px;
+	height: auto;
+	/* 구역 내 텍스트 내용을 2줄까지만 노출 후 말줄임표! */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* border: 1px solid black; */
+}
+
+.HomePageBestRecipe_Txt {
+	/* '베스트 레시피' 게시글 미리보기텍스트 */
+	font-size: 14px;
+	font-family: "Sanchez";
+	padding: 0px;
+}

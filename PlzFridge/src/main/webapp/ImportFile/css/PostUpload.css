@@ -1,0 +1,161 @@
+#post_upld_lightPage-container {
+	/* 명시도 조정 */
+	margin-top: 10px;
+}
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+#post_upld_header {
+	/* 포스트 업로드 페이지 헤더 */
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+#post_out {
+	/* 게시물 작성 페이지로부터 뒤로가기 버튼-컨테이너 */
+	margin-top: 15px;
+	margin-left: 270px;
+	margin-bottom: 5px;
+	/* 임의 설정 */
+	/* background-color: thistle; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+.post_ch {
+	/* '사진을 선택해주세요' 컨테이너 */
+	background-color: ghostwhite;
+	width: 100%;
+	height: 25px;
+	padding-top: 5px;
+	padding-bottom: 2%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	/* border-top: 1px solid #ccc; */
+	/* 내부 정렬 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 임의 설정 */
+	/* background-color: cornflowerblue; */
+}
+
+.post_ch_img-container {
+	/* 등록 이미지 컨테이너 */
+	height: 160px;
+	padding: 5px;
+	/* 내부 정렬 */
+	display: flex;
+	flex-direction: column; /* 이미지와 버튼을 수직으로 나열 */
+	justify-content: center;
+	align-items: center;
+	/* 사진이 넘치면 가리기 */
+	overflow: hidden;
+	/* 외곽선 */
+	box-shadow: 0px 0px 4px rgba(65, 65, 65, 0.35);
+}
+
+.custom-file-label {
+	display: inline-block;
+	background-color: #fdf9ce; /* 버튼을 노란색으로 */
+	color: black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: bolder;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.custom-file-label:hover {
+	background-color: darkorange; /* 버튼 호버 시 어두운 노란색으로 */
+}
+
+#file_input {
+	display: none; /* 파일 선택 input을 숨김 */
+}
+
+#dft_img {
+	/* 기본 이미지 */
+	width: 120px;
+	height: auto;
+	/* 이미지 사이즈 맞추기 */
+	object-fit: scale-down;
+	/* 투명도 */
+	opacity: 0.5;
+}
+
+.post_ch_img-container>img {
+	/* 등록 이미지 */
+	width: auto;
+	/* 컨테이너와 세로 맞추기 */
+	height: 220px;
+	/* 이미지 사이즈 맞추기 */
+	object-fit: scale-down;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+.post_file_input {
+	/* '파일 선택' 인풋 컨테이너 */
+	/* ❗수정 가능성 있음 */
+	width: 290px;
+	border-radius: 5px;
+	margin-top: 5px; 
+	margin-bottom : 5px;
+	/* 내부 정렬 */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.post_file_input>input {
+	/* '파일 선택' 인풋 */
+	/* ❗수정 가능성 있음 */
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+#post_text {
+	/* 게시물 내용 입력 구역 */
+	background-color: white;
+	width: 300px;
+	height: 160px;
+	min-height: 60px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	/* 여백 설정 */
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 13px;
+	/* 임의 설정 */
+	/* background-color: slategray; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔸◽🔹◽🔸◽🔹◽🔸 */
+#post_text+div>input {
+	/* '게시글 올리기' 인풋 */
+	width: 125px;
+	height: 28px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	/* 내부 정렬 */
+	display: flex;
+	text-align: center;
+	/* 폰트 설정 */
+	font-family: "BMHANNAPro";
+	font-size: 12px;
+	font-weight: 600;
+	color: #777676;
+	/* sel_Profile_Choice_btn 유래 속성 */
+	background-color: #fdf9ce;
+	margin-bottom: 0;
+	border-radius: 20px;
+	/* 전역 btn 유래 속성 */
+	cursor: pointer;
+	border: 2px solid;
+	border-radius: 20px;
+	border-color: #6b6a6a98;
+	box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+}

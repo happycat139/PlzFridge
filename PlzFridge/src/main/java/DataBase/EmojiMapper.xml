@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="EmojiMapper">
+
+	<!-- 사용자가 게시물에 좋아요/웃겨요를 추가했는지 확인 -->
+	<select id="isEmojiGiven" parameterType="map" resultType="int">
+		SELECT
+		COUNT(*) FROM t_emoji WHERE b_idx = #{b_idx} AND user_id =
+		#{user_id}
+		AND emoji_type = #{emoji_type}
+	</select>
+
+	<!-- 좋아요/웃겨요 추가 -->
+	<insert id="insertEmoji" parameterType="map">
+		INSERT INTO t_emoji
+		(b_idx, user_id, emoji_type)
+		VALUES (#{b_idx}, #{user_id},
+		#{emoji_type})
+	</insert>
+
+	<!-- 좋아요/웃겨요 삭제 -->
+	<delete id="deleteEmoji" parameterType="map">
+		DELETE FROM t_emoji WHERE
+		b_idx = #{b_idx} AND user_id = #{user_id} AND
+		emoji_type =
+		#{emoji_type}
+	</delete>
+
+	<!-- 게시물에 대한 좋아요/웃겨요 수 가져오기 -->
+	<select id="getEmojiCount" parameterType="map" resultType="int">
+		SELECT COUNT(*) FROM t_emoji WHERE b_idx = #{b_idx} AND emoji_type =
+		#{emoji_type}
+	</select>
+
+	<select id="emojiTypeCount" parameterType="int"
+		resultType="EmojiDTO">
+		SELECT
+		b.b_idx,
+		IFNULL(SUM(CASE WHEN e.emoji_type = 'like' THEN 1 ELSE 0 END), 0) AS like_count,
+		IFNULL(SUM(CASE WHEN e.emoji_type = 'fun' THEN 1 ELSE 0 END), 0) AS fun_count
+		FROM
+		(SELECT #{b_idx} AS b_idx) b
+		LEFT JOIN
+		t_emoji e ON b.b_idx = e.b_idx
+		GROUP BY
+		b.b_idx;
+	</select>
+
+
+</mapper>

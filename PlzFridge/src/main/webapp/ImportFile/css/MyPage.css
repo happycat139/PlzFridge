@@ -1,0 +1,269 @@
+.myPage_profile-container {
+  /* 회원 프로필 컨테이너 */
+  width: 100%;
+  gap: 5px;
+  padding-bottom: 15px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  /* 임의 설정 */
+  /* background-color: bisque; */
+}
+
+.myPage_profile-IMG {
+  /* 회원 프로필 사진 컨테이너 */
+  width: 105px;
+  height: 105px;
+  /* 내부 사진 프레이밍 */
+  padding: 2px;
+  overflow: hidden;
+  /* 내부 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 임의 설정 */
+  /* background-color: pink; */
+}
+.myPage_profile-IMG > img {
+  /* 회원 프로필 사진 */
+  height: 100px;
+  width: auto;
+  /* 테두리 */
+  border: 3.5px solid black;
+  border-radius: 50px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.myPage_profile_Info-container {
+  /* 회원 프로필 정보 컨테이너 */
+  width: 210px;
+  /* 임의 설정 */
+  /* background-color: cornflowerblue; */
+}
+
+.myPage_profile_Info_userName-container {
+  /* 회원 닉네임 컨테이너 */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Sanchez;
+  font-size: 22px;
+  /* 임의 설정 */
+  /* background-color: darkkhaki; */
+}
+
+.myPage_profile_Info_userId-container {
+  /* 회원 아이디 컨테이너 */
+  margin-bottom: 5px;
+  padding-left: 10px;
+  /* 내부 정렬 */
+  display: flex;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  color: #505050;
+  /* 임의 설정 */
+  /* background-color: beige; */
+}
+
+#userinfo{
+   display: flex;
+   flex-direction: row;
+   width:360px;
+   margin-left: -50px;
+   margin-top:70px;
+}
+
+#user_name{
+   margin-left: -50px;
+}
+
+.myPage_profile_Info_userId-container{
+   margin-right:100px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#myPage_profile_Info_userBdgs-container {
+  /* 회원 뱃지 컨테이너 */
+  width: 330px;
+  min-height: 200px;
+  height: auto;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  gap: 5px;
+  /* 임의 설정 */
+  /* background-color: darkcyan; */
+}
+
+.myPage_userBdgs_hr_Txt {
+  /* '내 뱃지' 텍스트 & 구분선 컨테이너 */
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  gap: 30px;
+  /* 내부 정렬 */
+  display: flex;
+  flex-direction: row-reverse;
+
+  /* 임의 설정 */
+  /* background-color: honeydew; */
+}
+
+.Txt_myBdg {
+  margin-right: 15px;
+}
+
+.myPage_userBdgs_hr_Txt hr {
+  /* 구분선 */
+  width: 230px;
+}
+
+.myPage_userBdgs-Box {
+  /* 회원 뱃지 정렬용 컨테이너 */
+  padding-bottom: 15px;
+  padding-left: 5px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* 임의 설정 */
+  /* background-color: beige; */
+}
+
+.userBdg_IMG-container {
+  /* 회원 뱃지 IMG 개별 컨테이너 */
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding-top: 5px;
+  /* 이미지가 넘치면 잘리게 */
+  overflow: hidden;
+  /* 임의 설정 */
+  /* background-color: darkolivegreen; */
+}
+
+.userBdg_IMG-container > img {
+  /* 회원 뱃지 이미지 */
+  height: 70px;
+  width: auto;
+  /* 뱃지 이미지 둥글게 깎기 */
+  border: none;
+  border-radius: 50px;
+}
+
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#myPage_profile_Info_userPosts-container {
+  /* 회원 내게시글 컨테이너 */
+  width: 330px;
+  min-height: 200px;
+  height: auto;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  gap: 5px;
+  /* 임의 설정 */
+  /* background-color: darkgoldenrod; */
+}
+
+/* ⚠️ 회원 내게시물 전체 컨테이너는 '회원 뱃지 정렬용 컨테이너' 와 동일 ⚠️ */
+
+.userPosts_IMG-container {
+  /* 회원 내게시물 IMG 개별 컨테이너 */
+  width: 155px;
+  height: 150px;
+  margin: 0;
+  padding-top: 5px;
+  /* 이미지가 넘치면 잘리게 */
+  overflow: hidden;
+  /* 임의 설정 */
+  /* background-color: darkolivegreen; */
+}
+
+.userPosts_IMG-container > a > img {
+  /* 회원 게시글 이미지 */
+  height: 145px;
+  width: auto;
+  /* 게시글 이미지 모서리 깎기 */
+  border: none;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#mypage_mypost {
+   display:flex;
+   flex-direction: column
+}
+
+
+.cutebutton {
+    background-color: #ffe6f7; /* 아주 연한 분홍색 배경 */
+    color: #666; /* 연한 회색 글자 */
+    border: none; /* 테두리 없음 */
+    padding: 5px 12px; /* 작고 적당한 여백 */
+    font-size: 10px; /* 작은 글자 크기 */
+    border-radius: 15px; /* 둥근 모서리 */
+    cursor: pointer; /* 클릭 가능한 포인터 */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* 부드러운 애니메이션 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+}
+
+/* 마우스를 올렸을 때 */
+.cutebutton:hover {
+    background-color: #ffd6f0; /* 조금 더 진한 연핑크 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 더 깊게 */
+}
+
+/* 클릭 시 */
+.cutebutton:active {
+    background-color: #ffcce9; /* 더 진한 핑크 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 그림자 작게 */
+}
+
+/* 비활성화된 버튼 */
+.cutebutton:disabled {
+    background-color: #f0f0f0; /* 연한 회색 배경 */
+    color: #aaa; /* 연한 회색 글자 */
+    cursor: not-allowed; /* 금지된 커서 */
+    box-shadow: none; /* 그림자 제거 */
+}
+
+
+/* 연한 색상의 로그아웃 버튼 */
+.logout-button {
+    background-color: #fef0fa; /* 더 연한 핑크색 배경 */
+    color: #888; /* 연한 회색 글자 */
+    border: none; /* 테두리 없음 */
+    padding: 5px 12px; /* 작고 적당한 여백 */
+    font-size: 14px; /* 작은 글자 크기 */
+    border-radius: 15px; /* 둥근 모서리 */
+    cursor: pointer; /* 클릭 가능한 포인터 */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* 부드러운 애니메이션 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+}
+
+/* 마우스를 올렸을 때 */
+.logout-button:hover {
+    background-color: #fcd9f2; /* 조금 더 진한 연핑크 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 더 깊게 */
+}
+
+/* 클릭 시 */
+.logout-button:active {
+    background-color: #fbbfea; /* 더 진한 핑크 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 그림자 작게 */
+}
+
+/* 비활성화된 버튼 */
+.logout-button:disabled {
+    background-color: #f0f0f0; /* 연한 회색 배경 */
+    color: #ccc; /* 연한 회색 글자 */
+    cursor: not-allowed; /* 금지된 커서 */
+    box-shadow: none; /* 그림자 제거 */
+}

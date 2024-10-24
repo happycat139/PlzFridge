@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="RecipeDAO">
+
+	<select id="topRecipe" resultType="Recipe">
+		SELECT r.recipe_idx, r.recipe_name, r.recipe_img1
+		FROM t_recipe r
+		JOIN t_favorite f ON r.recipe_idx = f.recipe_idx
+		GROUP BY f.recipe_idx
+		ORDER BY COUNT(f.user_id) DESC
+		LIMIT 20;
+	</select>
+	
+	
+	<select id="findRecipesByIngredients" parameterType="list" resultType="Recipe">
+	
+        SELECT DISTINCT r.*
+        FROM t_recipe r
+        INNER JOIN t_recipe_input ri ON r.recipe_idx = ri.recipe_idx
+        INNER JOIN t_ingredient i ON ri.ingre_idx = i.ingre_idx
+        WHERE i.ingre_name IN
+        <foreach collection="list" item="ingredient" open="(" separator="," close=")">
+            #{ingredient}
+        </foreach>;
+        
+    </select>
+    
+    <select id="getRecipeById" parameterType="int" resultType="Recipe">
+        SELECT *
+        FROM t_recipe
+        WHERE recipe_idx = #{recipeId}
+    </select>
+    
+    <select id="selectFavoriteRecipesByUserId" parameterType="String" resultType="Recipe">
+		SELECT r.*
+		FROM t_favorite f
+		JOIN t_recipe r ON f.recipe_idx = r.recipe_idx
+		WHERE f.user_id = #{user_id}
+	</select>
+    
+    <select id="getIngredientsByRecipeIdx" resultType="string" parameterType="int">
+    SELECT i.ingre_name
+    FROM t_recipe_input ri
+    JOIN t_ingredient i ON ri.ingre_idx = i.ingre_idx
+    WHERE ri.recipe_idx = #{recipe_idx};
+	</select>
+    
+    
+   
+</mapper>

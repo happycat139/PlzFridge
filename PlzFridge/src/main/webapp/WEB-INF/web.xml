@@ -1,0 +1,188 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<!-- 서블릿 정의 -->
+	<servlet>
+		<servlet-name>BoardService</servlet-name>
+		<display-name>BoardService</display-name>
+		<description></description>
+		<servlet-class>Controller.BoardService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginService</servlet-name>
+		<display-name>LoginService</display-name>
+		<description></description>
+		<servlet-class>Controller.LoginService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EmojiService</servlet-name>
+		<display-name>EmojiService</display-name>
+		<description></description>
+		<servlet-class>Controller.EmojiService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>CommentService</servlet-name>
+		<display-name>CommentService</display-name>
+		<description></description>
+		<servlet-class>Controller.CommentService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>BestRecipeService</servlet-name>
+		<display-name>BestRecipeService</display-name>
+		<description></description>
+		<servlet-class>Controller.BestRecipeService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SearchService</servlet-name>
+		<display-name>SearchService</display-name>
+		<description></description>
+		<servlet-class>Controller.SearchService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DetailRecipeService</servlet-name>
+		<display-name>DetailRecipeService</display-name>
+		<description></description>
+		<servlet-class>Controller.DetailRecipeService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>FavoriteService</servlet-name>
+		<display-name>FavoriteService</display-name>
+		<description></description>
+		<servlet-class>Controller.FavoriteService</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>JoinService</servlet-name>
+		<display-name>JoinService</display-name>
+		<description></description>
+		<servlet-class>Controller.JoinService</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MyPageService</servlet-name>
+		<display-name>MyPageService</display-name>
+		<description></description>
+		<servlet-class>Controller.MyPageService</servlet-class>
+	</servlet>
+	<servlet>
+      <servlet-name>TTSService</servlet-name>
+      <display-name>TTSService</display-name>
+      <description></description>
+      <servlet-class>Controller.TTSService</servlet-class>
+   </servlet>
+   
+   <servlet>
+      <servlet-name>LogoutService</servlet-name>
+      <display-name>LogoutService</display-name>
+      <description></description>
+      <servlet-class>Controller.LogoutService</servlet-class>
+   </servlet>
+   <servlet>
+      <servlet-name>DeleteBoardService</servlet-name>
+      <display-name>DeleteBoardService</display-name>
+      <description></description>
+      <servlet-class>Controller.DeleteBoardService</servlet-class>
+   </servlet>
+   <servlet>
+      <servlet-name>CheckIdService</servlet-name>
+      <display-name>CheckIdService</display-name>
+      <description></description>
+      <servlet-class>Controller.CheckIdService</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>TalkService</servlet-name>
+   	<display-name>TalkService</display-name>
+   	<description></description>
+   	<servlet-class>Controller.TalkService</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>MTTSService</servlet-name>
+   	<display-name>MTTSService</display-name>
+   	<description></description>
+   	<servlet-class>Controller.MTTSService</servlet-class>
+   </servlet>
+   
+
+	<!-- 서블릿 매핑 -->
+	<servlet-mapping>
+		<servlet-name>BoardService</servlet-name>
+		<url-pattern>/BoardService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginService</servlet-name>
+		<url-pattern>/LoginService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EmojiService</servlet-name>
+		<url-pattern>/EmojiService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CommentService</servlet-name>
+		<url-pattern>/CommentService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>BestRecipeService</servlet-name>
+		<url-pattern>/BestRecipeService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SearchService</servlet-name>
+		<url-pattern>/SearchService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DetailRecipeService</servlet-name>
+		<url-pattern>/DetailRecipeService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>FavoriteService</servlet-name>
+		<url-pattern>/FavoriteService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JoinService</servlet-name>
+		<url-pattern>/JoinService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyPageService</servlet-name>
+		<url-pattern>/MyPageService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+      <servlet-name>TTSService</servlet-name>
+      <url-pattern>/TTSService</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>LogoutService</servlet-name>
+      <url-pattern>/LogoutService</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DeleteBoardService</servlet-name>
+      <url-pattern>/DeleteBoardService</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>CheckIdService</servlet-name>
+      <url-pattern>/CheckIdService</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>TalkService</servlet-name>
+   	<url-pattern>/TalkService</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>MTTSService</servlet-name>
+   	<url-pattern>/MTTSService</url-pattern>
+   </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,221 @@
+/* ✨ 상단바: Header & Logo 속성 ✨ */
+.globals-header {
+	/* 이하 설정값은 'home 헤더' 기준!!⭐⭐⭐ */
+	background-color: white;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	/* header 내부 정렬 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* div 내부에서 스크롤 시 고정 */
+	position: sticky;
+	top: 0;
+	/* 중첩 요소의 stack order */
+	z-index: 10;
+	/* header 내 로고 간격 */
+	gap: 10px;
+}
+
+.general-header {
+	/* 이하 설정값은 'general 헤더' 기준!!⭐⭐⭐
+     ==> 일반적인 페이지에서의 헤더  */
+	background-color: white;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	/* header 내부 정렬 */
+	display: flex;
+	justify-content: flex-start;
+	/* div 내부에서 스크롤 시 고정 */
+	position: sticky;
+	top: 0;
+	/* 중첩 요소의 stack order */
+	z-index: 10;
+	/* header 내 요소 간격 */
+	gap: 5px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 Header 하위 요소 속성 설정1-로고,타이틀 */
+.logo_container {
+	/* 전역 로고 컨테이너: 로고(img), 타이틀(txt)  */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 60px;
+}
+
+.header-LogoImg {
+	/* 헤더-로고이미지 사이즈 기본설정 */
+	width: 50px;
+	height: auto;
+}
+
+.general-logo_container {
+	/* 일반적인(general) 페이지에서의 헤더 내 로고묶음 컨테이너 */
+	padding-left: 10px;
+	width: 120px;
+	/* 로고묶음을 수평 정렬 */
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.general-header_Title {
+	/* general 헤더-타이틀 폰트 설정
+  (span으로 된 컨테이너) */
+	font-size: medium;
+	font-weight: 600;
+	gap: 10px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 Header 하위 요소 속성 설정2-hr,페이지명 */
+.header_HrPageTl-container {
+	/* 헤더의 hr과 페이지명이 담긴 컨테이너 */
+	/* background-color: aquamarine; */
+	width: 270px;
+	margin: 0;
+	margin-left: 2px;
+	padding-right: 10px;
+	gap: 2px;
+	/* 내부 정렬 */
+	display: flex;
+	align-items: left;
+	flex-direction: column;
+}
+
+.general-Tl_hr {
+	/* 일반적 페이지 상 헤더의 hr */
+	float: left;
+	border: 1.5px solid gray;
+	width: 92%;
+	margin-left: 0;
+	margin-top: 6px;
+}
+
+.general-pageTl {
+	/* 일반적 페이지 상 헤더의 페이지명 */
+	color: gray;
+	font-weight: 600;
+	font-size: medium;
+	/* 위치 조정 */
+	margin-bottom: 2px;
+	/* 페이지명을 좌측에 배치 */
+	display: flex;
+	text-align: left;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* ✨ 콘텐츠 컨테이너 : 몸통 영역 속성 ✨ */
+.globals-content_container {
+	min-height: 450px;
+	/* 내용이 늘어날 때 높이 자동 증가 */
+	height: auto;
+	overflow: visible;
+	/* 컨텐츠가 하단바에 가려지지 않게 */
+	padding-bottom: 35px;
+}
+
+/* 💡 콘텐츠 컨테이너 하위 요소 속성 설정 */
+/* input태그 컨테이너 */
+.input_container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+hr {
+	/* 서비스 전역에 존재하는 hr에 음영 효과 */
+	box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.15);
+}
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* ✨ 하단바: Footer & Icon 속성 ✨ */
+.globals-footer {
+	background-color: whitesmoke;
+	padding-bottom: 0px;
+	width: 380px;
+	min-height: 20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	/* 하단바 희미하게 선 */
+	/* border-top: 0.1px solid #6b6a6a98; */
+	box-shadow: 2px 0px 6px rgba(65, 65, 65, 0.35);
+	/* 하단바 메뉴 아이콘 간격 */
+	gap: 10px;
+	/* 스크롤 발생에도 위치 고정 */
+	position: fixed;
+	bottom: 0;
+	/* footer 내부 정렬 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* 행 방향 중앙 정렬 */
+	align-content: center;
+	/* 중첩 요소의 stack order */
+	z-index: 10;
+}
+
+/* 💡 Footer 하위 요소 속성 설정 */
+/* 아이콘 컨테이너: 하단바 페이지탭, 각종 버튼 */
+.icons-container {
+	width: 90px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+	gap: 0; /* 이미지와 텍스트 사이 간격을 제거 */
+
+	/*   width: 90px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  열 방향 나열
+  flex-direction: column;
+  gap: 3.5px; */
+}
+
+.icon_footer_img {
+	/* 하단바 아이콘 이미지 */
+	/* 	width: auto; */
+	height: 25px;
+}
+a {
+  text-decoration: none !important; /* 모든 a 태그 밑줄 제거 */
+  color: inherit; /* 부모 요소의 색상을 상속받도록 설정 */
+}
+.icon_footer_a {
+	font-family: "Open Sans";
+	font-size: 9px;
+	font-weight: bolder;
+	color: black;
+	text-decoration: none !important; /* 링크 밑줄 제거 */
+	cursor: pointer;
+	margin: 0; /* 텍스트와 이미지 사이의 간격 제거 */
+	padding: 0; /* 불필요한 여백 제거 */
+	line-height: 1; /* 텍스트의 줄 간격을 최소화하여 이미지와 텍스트를 밀착 */
+	/* 	text-decoration: none;
+	cursor: pointer;
+	하단바 a요소 폰트
+	font-family: "Open Sans";
+	font-size: 9px;
+	font-weight: bolder;
+	color: black; */
+}
+
+.icon_footer_a:hover {
+	/* 하단바 a요소에 마우스 커서 */
+	text-decoration: none;
+}

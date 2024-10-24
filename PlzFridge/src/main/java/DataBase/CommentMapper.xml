@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CommentDAO">
+
+	<insert id="insertComment" parameterType="CommentDTO">
+		INSERT INTO t_comment (b_idx, user_id, cmt_content)
+		VALUES (#{b_idx}, #{user_id}, #{cmt_content})
+	</insert>
+	
+	<select id="allComment" parameterType="int" resultType="CommentDTO">
+        SELECT user_id, cmt_content, created_at 
+        FROM t_comment 
+        WHERE b_idx = #{b_idx}
+    </select>
+</mapper>

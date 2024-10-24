@@ -1,0 +1,155 @@
+header {
+  margin-bottom: 20px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+.r_MainPage_result-container {
+  /* 검색 결과 레시피 출력부 컨테이너 */
+  height: 110px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* 임의 지정 */
+  /* background-color: aquamarine; */
+}
+
+.r_MainPage_result-IMG {
+  /* 검색결과 레시피 출력부-썸네일 이미지 */
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 사진의 가로가 길면 가장자리 자르기 */
+  overflow: hidden;
+  /* 임의 지정 */
+  background-color: whitesmoke;
+  border-radius:5px;
+}
+.r_MainPage_result-IMG img {
+   width: 180px;
+  height: auto;
+  /* 모서리 깎기 */
+  border-radius: 6px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_MainPage_result-ContentBox {
+  /* 검색결과 레시피 정보 컨테이너 */
+  height: 110px;
+  width: 220px;
+  /* 내부 정렬 */
+  display: inline-block;
+  /* 임의 지정 */
+  /* background-color: blueviolet; */
+}
+
+.r_MainPage_result_content {
+  /* 검색결과 레시피 정보 */
+  margin: 0;
+  width: 100%;
+  min-height: 80px;
+  /* 임의 지정 */
+  /* background-color: teal; */
+}
+
+h4 {
+  /* 검색결과 메뉴명 */
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  font-family: "Sanchez";
+}
+
+p {
+  /* 검색결과 '재료' */
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  display: flex;
+  /* .system_text_large 속성을 적용 */
+  font-family: "Sanchez";
+  font-size: 14;
+  font-weight: 600;
+  color: #505050;
+}
+
+ul {
+  /* 검색결과 재료 목록의 컨테이너 */
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  gap: 5px;
+  /* .system_text 속성을 적용 */
+  font-family: "Sanchez";
+  font-size: 13;
+
+  /* 텍스트가 들어갈 최대 영역 지정 */
+  width: 215px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* 또는, 여러 span 태그들을 한 줄로 처리하기 */
+  /* display: inline-block; */
+  /* 컨텐츠가 1줄을 넘어갈 경우 말줄임표 처리
+    ==> ❗❗❗시간 관계상 일단 스킵! 나중에 다시 해결 시도 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* 컨텐츠가 넘치면 보이지 않게 하기 */
+  overflow: hidden;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+/* ❗'Likey'에 변경 가능성 있음 */
+
+.r_MainPage_result_LikeyBtn-container {
+  /* 검색결과 레시피 찜 버튼 컨테이너 */
+  padding-right: 6px;
+  height: 30px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* 임의 지정 */
+  /* background-color: skyblue; */
+}
+
+.r_MainPage_LikeyBtn {
+  /* 검색결과 레시피 찜 버튼 */
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  /* 내부정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.r_MainPage_LikeyBtn img {
+  /* 찜 버튼 IMG */
+  width: 25px;
+  height: auto;
+  margin: 0;
+  /* 커서 hover */
+  cursor: pointer;
+}
+a h4 {
+    text-decoration: none; /* 밑줄 제거 */
+     color: black;
+}
+
+a {
+    text-decoration: none; /* 링크 자체에도 밑줄 제거 */
+     color: black;
+}

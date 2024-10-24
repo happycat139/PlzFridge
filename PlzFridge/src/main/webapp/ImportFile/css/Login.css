@@ -1,0 +1,84 @@
+
+
+#LoginPage-space {
+    /* 로그인 페이지만의 서비스 스페이스 설정 */
+    /* 상단 패딩 변경 */
+    padding-top: 10px;
+    /* 최소 높이 고정 */
+    min-height: 680px;
+  }
+
+  #LoginPageLogo-container {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .LoginPageLogoTxt {
+    font-size: xx-large;
+
+    /* ⭐ 폰트 그림자 효과 : 나중에 시도해보기! */
+    /* text-shadow: 3px 4px 5px red; */
+  }
+
+  #LoginPageLogoImg {
+    width: 130px;
+  }
+
+  .LoginPageBtn {
+    /* 로그인페이지 다중 버튼 공통설정 */
+    height: 45px;
+
+    /* 이하 다른 페이지에서도 재사용 가능성 있는 다중버튼 '가운데 정렬' 공통설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LoginPageSeekerBtn-container {
+    /* 구경할래요 버튼 컨테이너 */
+    height: 30px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+  }
+
+  #LoginPageSeekerBtn {
+    /* 버튼1-구경할래요 */
+    width: 200px;
+    border: 2.7px solid black;
+  }
+
+  #LoginPageSeekerBtnTxt {
+    /* 텍스트-구경할래요 */
+    font-size: x-large;
+    color: black;
+  }
+
+  #LoginPageLoginBtn {
+    /* 버튼2-로그인 */
+    width: 100px;
+  }
+
+  #LoginPageLoginBtnTxt {
+    /* 텍스트-로그인 */
+    font-size: large;
+  }
+
+
+
+#GoJoin {
+	
+	text-decoration: underline;
+	color: blue;
+}
+
+  .system_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }

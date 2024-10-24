@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="TalkMapper">
+	<insert id="insertTalk">
+		INSERT INTO t_usertalk (tk_title, tk_content)
+		VALUES
+		(#{tk_title}, #{tk_content})
+	</insert>
+
+	<select id="selectAllTalks" resultType="TalkDTO">
+		SELECT tk_title, tk_content
+		FROM t_usertalk order by tk_idx desc
+	</select>
+</mapper>
+	
+

@@ -1,0 +1,261 @@
+.r_DetailPage_result-container {
+   /* 선택된 레시피 메뉴 출력부 컨테이너 */
+   height: 370px;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding-bottom: 0px;
+   /* 내부 정렬 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column /* 임의 지정 */ /* background-color: aquamarine; */
+}
+
+.r_DetailPage_result-IMG {
+   /* 선택된 레시피-메뉴 이미지 */
+   width: 350px;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   /* 임의 지정 */
+   /* background-color: blanchedalmond; */
+}
+
+.r_DetailPage_result-IMG>img {
+   width: 100%; /* 너비를 div의 100%로 설정 */
+   height: 100%; /* 높이를 div의 100%로 설정 */
+   object-fit: cover; /* 이미지 비율을 유지하면서 div 크기에 맞춰 잘림 */
+   /* 모서리 깎기 */
+   border-radius: 3px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_DetailPage_result-ContentBox {
+   /* 선택된 레시피 메뉴명 & 찜 버튼 컨테이너 */
+   height: 40px;
+   width: 360px;
+   /* 내부 정렬 */
+   margin-top: 25px;
+   display: flex;
+   flex-direction: row;
+
+   /* 임의 지정 */
+   /* background-color: blueviolet; */
+}
+
+.r_DetailPage_result_content {
+   /* 선택된 레시피 메뉴명 컨테이너 */
+   margin: 0;
+   width: 100%;
+   /* 임의 지정 */
+   /* background-color: teal; */
+}
+
+h4 {
+   /* 선택된 메뉴명 */
+   padding: 0;
+   margin-left: 20px;
+   display: flex;
+   font-family: "Sanchez";
+   font-size:20px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_DetailPage_result_LikeyBtn-container {
+   /* 선택된 레시피 찜 버튼 컨테이너 */
+   /* 내부 정렬 */
+   /* 임의 지정 */
+   /* background-color: skyblue; */
+   margin-right:25px
+}
+
+.r_DetailPage_LikeyBtn {
+   /* 선택된 레시피 찜 버튼 */
+   width: 30px;
+   height: 30px;
+   padding: 0;
+   border: none;
+   background-color: white;
+   /* 내부정렬 */
+}
+
+.r_DetailPage_LikeyBtn img {
+   /* 찜 버튼 IMG */
+   width: 25px;
+   height: auto;
+   margin: 0;
+   /* 커서 hover */
+   cursor: pointer;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_DetailPage_result-container+div {
+   /* 메뉴/재료 출력부 구분선 컨테이너 */
+   width: 87%;
+   margin-top: 0;
+   margin-bottom: 0;
+   /* 임의 지정 */
+   /* background-color: brown; */
+}
+
+.r_DetailPage_result-container+div>hr {
+   /* 메뉴/재료 출력부 구분선 */
+   width: 100%;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_DetailPage_Ingre_Txt {
+   /* '재료' 텍스트 컨테이너 : 헤더 코드 재사용 */
+   width: 330px;
+   padding: 0;
+   margin-top: 0;
+   margin-bottom: 15px;
+   /* 임의 설정 */
+   /* background-color: lightblue; */
+}
+
+
+
+.r_DetailPage_IngreBox {
+   /* 선택된 레시피 재료 출력부 */
+   width: 330px;
+   margin-bottom: 20px;
+   /* 내부 정렬 */
+   /* 임의 설정 */
+   /* background-color: lightpink; */
+}
+
+#recipe_detail_ingre{
+   display: inline-block;
+   width: 30px;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+.r_DetailPage_Order-container {
+   /* 선택된 레시피 조리순서 출력부 컨테이너 */
+   width: 330px;
+   height: auto;
+   padding: 0;
+   /* 임의 지정 */
+   /* background-color: burlywood; */
+}
+
+.r_DetailPage_Order_hr_Txt {
+   /* '조리순서' 텍스트 & 구분선 컨테이너 */
+   width: 380px;
+   height: auto;
+   padding-left: 0;
+   padding-right: 0;
+   margin: 0;
+   /* 내부 정렬 */
+   display: flex;
+   flex-direction: row;
+   /* 임의 지정 */
+   /* background-color: bisque; */
+}
+
+.r_DetailPage_Order_hr {
+   /* '조리순서' 구분선 */
+   width: 260px;
+}
+
+#cooking_guide{
+   width: 260px;
+   margin-left:20px;
+}
+
+#recipe_detail_ingre_i{
+   width:280px;
+}
+
+#ingre_line{
+   display: flex;
+   flex-direction: row;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+#ingre_box{
+   column-count: 2; /* 2개의 열로 나누기 */
+    column-gap: 20px; /* 열 사이의 간격 */
+}
+
+
+
+ol {
+   /* 조리 순서 목록 컨테이너 */
+   padding-left: 20px;
+   margin-top: 10px;
+   /* 내부 정렬 */
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   font-family: "BMHANNAPro";
+   line-height: 1.2; /* 줄 간격 설정 */
+   /* 임의 지정 */
+   /* background-color: cadetblue; */
+}
+
+.button {
+   font-family: "BMHANNAPro";
+   background-color: #3498db; /* 기본 배경색 (밝은 파란색) */
+   color: white; /* 글자색 */
+   border: none; /* 테두리 없애기 */
+   padding: 10px 20px; /* 여백으로 버튼 크기 조정 */
+   font-size: 16px; /* 글자 크기 */
+   border-radius: 5px; /* 모서리를 둥글게 */
+   cursor: pointer; /* 마우스를 올리면 커서가 포인터로 변경 */
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   /* 애니메이션 추가 */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 살짝 그림자 추가 */
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+.button:hover {
+   background-color: #2980b9; /* 조금 더 어두운 파란색으로 변경 */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 강하게 */
+}
+
+/* 버튼을 클릭했을 때 */
+.button:active {
+   background-color: #1c6a93; /* 더 어두운 파란색으로 */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 클릭 시 그림자 작게 */
+}
+
+/* 버튼을 비활성화했을 때 */
+.button:disabled {
+   background-color: #bdc3c7; /* 비활성화된 버튼 배경색 (회색) */
+   cursor: not-allowed; /* 마우스를 올리면 금지 커서로 변경 */
+   box-shadow: none; /* 그림자 제거 */
+}
+
+/* 더 연한 핑크색 계열의 버튼 */
+.button {
+   background-color: #fde4ec; /* 아주 연한 핑크색 배경 */
+   color: #333; /* 어두운 회색 글자색으로 가독성 향상 */
+   border: none; /* 테두리 없음 */
+   padding: 6px 12px; /* 작고 적당한 여백 */
+   font-size: 14px; /* 작은 글자 크기 */
+   border-radius: 3px; /* 살짝 둥근 모서리 */
+   cursor: pointer; /* 클릭 시 포인터 표시 */
+   transition: background-color 0.2s ease; /* 배경색 부드럽게 변화 */
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 살짝 그림자 추가 */
+}
+
+/* 마우스를 올렸을 때 */
+.button:hover {
+   background-color: #facdd6; /* 조금 더 진한 연핑크 */
+}
+
+/* 버튼을 클릭했을 때 */
+.button:active {
+   background-color: #f8bcc9; /* 더 진한 핑크 */
+}
+
+/* 비활성화 상태 */
+.button:disabled {
+   background-color: #f9e0e7; /* 더 연한 분홍-회색 */
+   color: #ccc; /* 글자색도 연한 회색 */
+   cursor: not-allowed; /* 금지 커서 */
+}

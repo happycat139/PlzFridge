@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserDAO">
+
+	<!-- 회원가입/ insert 쿼리추가 -->
+	<insert id="join" parameterType="UserDTO">
+		INSERT INTO t_user
+		(user_id,
+		user_pw,
+		user_name,
+		user_email,
+		user_profile_img)
+		VALUES
+		(#{userId},
+		#{userPw},
+		#{userName},
+		#{userEmail},
+		#{userProfileImg});
+
+	</insert>
+
+	<select id="logIn" resultType="int">
+		SELECT COUNT(*) FROM t_user WHERE user_id = #{userId} AND user_pw =
+		#{userPw};
+	</select>
+
+
+
+	<select id="checkUserId" resultType="int">
+		SELECT COUNT(*)
+		FROM t_user
+		WHERE user_id = #{userId}
+	</select>
+
+	<select id="checkLogin" resultType="int">
+		SELECT COUNT(*)
+		FROM t_user
+		WHERE user_id = #{userId} AND user_pw = #{userPw};
+	</select>
+
+	<select id="checkPW" resultType="String" parameterType="String">
+		SELECT user_pw
+		FROM t_user
+		WHERE user_id = #{userId};
+
+	</select>
+
+	<select id="getprofileImage" resultType="String">
+		SELECT user_profile_img
+		AS userProfileImg
+		FROM t_user
+		WHERE user_id = #{userId}
+	</select>
+
+
+
+	<select id="getUserName" resultType="String">
+		SELECT user_name AS userName
+		FROM t_user
+		WHERE user_id = #{userId}
+	</select>
+
+	<select id="profileImage" resultType="String">
+		SELECT a.user_profile_img
+		FROM t_user a join t_board b
+		on(a.user_id = b.user_id)
+		where b_idx=#{b_idx}
+	</select>
+
+
+</mapper>

@@ -1,0 +1,422 @@
+#post_upld_header {
+  display: flex;
+  justify-content: center;
+  /* 💡 적용이 안 되는 padding-bottom 대체 속성 */
+  height: 60px;
+  /* 임의 지정 */
+  /* background-color: blanchedalmond; */
+}
+
+.globals-content_container {
+  /* 임의 지정 */
+  /* background-color: lavender; */
+}
+
+#post_main_container {
+  min-height: 300px;
+  height: auto;
+  margin-bottom: 0px;
+  /* 임의 지정 */
+  /* background-color: lightcyan; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+#btn-Post {
+  /* 헤더 내 '포스트 게시' a태그 버튼 */
+  margin-left: 200px;
+  margin-top: 10px;
+  width: 25px;
+  height: 20px;
+  background-color: #787878;
+  box-shadow: 1px 2px 6px rgba(65, 65, 65, 0.35);
+  /* 내부 여백 */
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 12px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* 폰트 설정 */
+  font-weight: 600;
+  font-size: x-large;
+  color: white;
+  /* 외곽선 */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  /* 링크의 밑줄 제거 */
+  text-decoration: none;
+  cursor: pointer;
+  /* 임의 지정 */
+  /* background-color: #007bff; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 게시물 음영 컨테이너 */
+
+.post_shd_area {
+  /* ❗ 음영컨테이너1-게시물 1개 마다 */
+  /* box-shadow: 2px 0px 6px rgba(65, 65, 65, 0.35); */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+#post_user_info {
+  /* 작성자 정보 컨테이너 */
+  width: 96%;
+  height: 40px;
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* 💡 게시물 사이 간격!!! */
+  /* margin-top: 5px; */
+  /* 임의 지정 */
+  /* background-color: palegreen; */
+}
+
+#post_user_logo {
+  /* 작성자 프사 컨테이너 */
+  background-color: lightgray;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  /* 외곽선 */
+  border-radius: 50%;
+  /* ❗Sel_Profile 또는 My_Page의 border 스타일과 통일성 */
+  border: 2px solid darkgray;
+}
+
+#post_user_logo img {
+  /* 작성자 프사 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#post_user_name {
+  /* 작성자명 컨테이너 */
+  margin-left: 15px;
+  width: 150px;
+  padding: 0;
+  margin-bottom: 3px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* 임의 지정 */
+  /* background-color: coral; */
+}
+
+#post_user_name > h6 {
+  /* 작성자명 Txt */
+  font-family: Open Sans;
+  font-size: small;
+  font-weight: 800;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+.post_photo {
+  /* 게시물 이미지 컨테이너 */
+  width: 380px;
+  height: 240px;
+  overflow: hidden;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_photo > img {
+  /* 게시물 이미지 */
+  box-shadow: 2px 0px 6px rgba(65, 65, 65, 0.35);
+  /* 이미지 사이즈 맞추기 */
+  object-fit: contain;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+#post_click {
+  /* '게시물 상호작용 3종 버튼' 컨테이너 */
+  margin-top : 10px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+ justify-content: space-between;
+  /* 임의 지정 */
+  /* background-color: cornflowerblue; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+#post_a {
+  /* '댓글달기 버튼' 컨테이너 */
+  height: 100%;
+  max-width: 45px;
+  
+  padding: 0;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 사이즈 넘칠 떄 */
+  overflow: hidden;
+
+  /* 임의 지정 */
+  /* background-color: cadetblue; */
+}
+
+.comment-btn {
+  /* '댓글달기' 버튼 */
+  background-color: white;
+  width: 100%;
+  height: auto;
+  /* 외곽선 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 임의 지정 */
+  /* background-color: #007bff; */
+}
+
+#post_a img {
+    width: 100%;  /* 너비를 부모 요소에 맞춤 */
+    height: auto; /* 높이는 이미지 비율에 맞게 자동 조정 */
+    object-fit: contain; /* 이미지가 잘리거나 왜곡되지 않도록 비율을 유지하며 공간에 맞춤 */
+}
+
+/* .comment-btn > img {
+  이미지 사이즈 맞추기
+  object-fit: contain;
+}
+
+#post_a button {
+  '댓글달기' 버튼 (IMG)
+  width: 30px;
+  height: 30px;
+} */
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+.post_emo_btn {
+  /* '좋아요/웃겨요 버튼' 컨테이너 */
+  margin-left: 250px;
+  gap: 5px;
+  /* 임의 지정 */
+  /* background-color: chocolate; */
+}
+
+.post_emo_btn button {
+  /* '좋아요😍/웃겨요🤣' 버튼 */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  /* 배경 및 외곽선 */
+  border: none;
+  background-color: white;
+  /* 이모지 사이즈 */
+  font-size: large;
+  /* 임의 지정 */
+  /* background-color: crimson; */
+}
+
+.post_emo_btn button > span {
+  /* '좋아요/웃겨요 버튼' Txt */
+  font-size: 12px;
+  color: #787878;
+}
+
+.post_emo_btn button > br {
+  margin: 0;
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+#post_content {
+  /* 게시글 영역 */
+  /* background-color: whitesmoke; */
+  font-family: Open Sans;
+  font-size: 13;
+  /* 패딩 상하-좌우 */
+  padding: 5px 20px;
+  /* 내부 정렬 */
+  text-align: start;
+  /* 임의 지정 */
+  /* background-color: cornsilk; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 댓글 입력창이 안 보일 때-클릭 전 */
+
+.comments {
+  /* 댓글 노출구역 전체 컨테이너 */
+  margin-bottom: 10px;
+  /* 댓글 두 줄만 보이게 하기 */
+  min-height: 20px;
+  overflow: hidden;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  flex-direction: column
+  /* 임의 지정 */
+  /* background-color: chartreuse; */
+}
+
+.comment {
+  /* 댓글 목록 컨테이너 (JS 적용 부분) */
+  width: 340px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  /* 댓글 영역 귀엽게 */
+  padding: 3px 10px;
+  background-color: #FFF0F5;
+  border-radius: 15px;
+  /* 내부 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* ❗ 구역 내 텍스트 내용을 2줄까지만 노출 후 말줄임표! */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 임의 지정 */
+  /* background-color: orchid; */
+}
+
+.comment > span {
+  font-family: Open Sans;
+  font-size: medium;
+  /* ❗ 구역 내 텍스트 내용을 2줄까지만 노출 후 말줄임표! */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 임의 지정 */
+  /* background-color: olivedrab; */
+}
+
+#comment_created_at {
+  /* 댓글 등록 일자 */
+  color: gray;
+  font-size: 9px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  /* 임의 지정 */
+  /* background-color: goldenrod; */
+}
+
+/* ◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽🔹◽🔸◽ */
+
+/* 💡 댓글 입력창이 보일 때-클릭 후 */
+
+.comment-box {
+  /* 댓글 입력창 열림 */
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+  width: 360px;
+  height: 50%;
+  padding: 10px;
+  /* 포지션 */
+  position: fixed;
+  /* 요소의 쌓이는 순서(stack order) */
+  z-index: 1000;
+  /* 슬라이드 애니메이션 관련 */
+  bottom: -100%; /* 처음에는 화면 아래로 숨김 */
+  left: 50%; /* 화면 중앙에 맞게 위치 */
+  transform: translateX(-50%); /* 창을 중앙으로 정렬 */
+  transition: bottom 0.3s ease-in-out; /* 슬라이드 애니메이션 */
+  /* 임의 지정 */
+  /* background-color: yellow; */
+}
+
+.comment-box.active {
+  bottom: 0; /* 화면 아래에서 위로 올라옴 */
+  /* 임의 지정 */
+  /* background-color: maroon; */
+}
+
+p {
+  /* '댓글입력' 안내문구 */
+  font-size: x-large;
+  color: #464646;
+}
+
+.comment-input {
+  /* 댓글 입력 필드 */
+  background-color: whitesmoke;
+  width: 80%; /* 입력창 너비 전체 사용 */
+  height: 140px;
+  padding: 10px; /* 입력창 패딩 */
+  margin-left: 10px;
+  /* 외곽선 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* 크기 조정 불가능하게 */
+  /* 폰트 설정 */
+  font-family: Open Sans;
+  font-size: 14px;
+  /* 임의 지정 */
+  /* background-color: chartreuse; */
+}
+
+.comment-input + button {
+  /* '댓글 등록' 버튼 */
+  width: 125px;
+  height: 28px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  /* 내부 정렬 */
+  text-align: center;
+  /* 폰트 설정 */
+  font-family: "BMHANNAPro";
+  font-size: 13px;
+  font-weight: 600;
+  color: #777676;
+  /* sel_Profile_Choice_btn 유래 속성 */
+  background-color: #fdf9ce;
+  margin-bottom: 0;
+  border-radius: 20px;
+  /* 전역 btn 유래 속성 */
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #6b6a6a98;
+  box-shadow: 1.5px 2px 4px rgba(65, 65, 65, 0.25);
+}
+
+/* 댓글 달기 취소 버튼 */
+.close-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute; /* 닫기 버튼을 절대 위치로 설정 */
+  top: 10px; /* 슬라이드 창 상단에서 10px 아래에 위치 */
+  right: 10px; /* 슬라이드 창 오른쪽에서 10px 왼쪽에 위치 */
+  width: 50px; /* 버튼 너비 */
+  text-align: center;
+}
