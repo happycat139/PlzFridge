@@ -22,7 +22,7 @@ public class MTTSService extends HttpServlet {
 
 	static {
         System.setProperty("GOOGLE_APPLICATION_CREDENTIALS",
-                "C:/Users/smhrd/Downloads/reliable-vector-436306-d6-9fc67884af5e.json");
+                "key.json");
     }
 
 	
