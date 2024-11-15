@@ -85,7 +85,7 @@
         <td>라이브러리</td>
         <td>
            <img src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=Google Cloud&logoColor=white"/>
-          <img src="https://img.shields.io/badge/Google Cloud-#4285F4?style=for-the-badge&logo=Google Cloud&logoColor=white">
+          <img src="https://img.shields.io/badge/Google Cloud-4285F4?style=for-the-badge&logo=Google Cloud&logoColor=white">
         </td>
     </tr>
     <tr>
