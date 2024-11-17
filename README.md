@@ -130,7 +130,7 @@
 
 ![image](https://github.com/user-attachments/assets/bd275503-df9a-49c7-9a7c-0b66b5002eb5)
 <br>
-
+<br>
 ## 👨‍👩‍👦‍👦 팀원 역할
 <table>
   <tr>
@@ -147,7 +147,7 @@
   </tr>
   <tr>
     <td align="center"><b>Backend / Crawling</b></td>
-    <td align="center"><b>PM</b></td>
+    <td align="center"><b>PM / Backend</b></td>
     <td align="center"><b>Backend / DB</b></td>
     <td align="center"><b>Frontend</b></td>
   </tr>
