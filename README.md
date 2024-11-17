@@ -134,10 +134,10 @@
 ## 👨‍👩‍👦‍👦 팀원 역할
 <table>
   <tr>
-    <td align="center"><img src="https://i.namu.wiki/i/a5QpSbzZ5AWsuwcwiTaclCel8slMLZxYOpg3K97dct-fbrnxfSq00Z7CP7aLUNeapp1bW8TjQhdx7-i_EoDoB8mkmJq2G-9VkiD-WWw1ljN1_5bvrrHrLSbnhsPbQ70za4FLt8isRncXA4OtYnoGOg.webp" width="100" height="100"/></td>
-    <td align="center"><img src="https://i.namu.wiki/i/cIjZ9AS062NFC_pKl7lnECDfS-LsNdNAVAhrxCr5XgGSYcsQp5Q3YfCEvcVMdYi8bpORDfYBBsbdrFUvnXGYF8eDKdk2p4i0GSh41Uk_efxQ13sskGg3MLaLh02x11_WUnFVK82bwBdlBfpI_Up0WA.webp" width="100" height="100"/></td>
-    <td align="center"><img src="https://i.namu.wiki/i/S56rJQsyao9CHi-qQFQCVs5VBShM4vl1GyZaj0-zIT8cf7mV7ECfbr44OIRefJegqolX9VDevktgTN_-XaNPMGuBjFLeKUJt7DJ-NyQ9b8c8MvqS1xrfihknFFGYg2wQIrKujlNQtvUrhzh8JEZ08Q.webp" width="100" height="100"/></td>
-    <td align="center"><img src="https://i.namu.wiki/i/gnZYHn5KcJnjMJMyGE9H2QDSSymaIr7_HrYxccBeifxtTp6GN1LVTbxxtAN68qMNJmCAqM4NoeXX3rEjzxWKXjJIHz0sewEqx83vJsJ6qm4OMdVaE_ss33fz_8QFQTFWvh8WlqzsHGEXfTsJymDwxQ.webp" width="100" height="100"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/a5QpSbzZ5AWsuwcwiTaclCel8slMLZxYOpg3K97dct-fbrnxfSq00Z7CP7aLUNeapp1bW8TjQhdx7-i_EoDoB8mkmJq2G-9VkiD-WWw1ljN1_5bvrrHrLSbnhsPbQ70za4FLt8isRncXA4OtYnoGOg.webp" width="130" height="130"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/cIjZ9AS062NFC_pKl7lnECDfS-LsNdNAVAhrxCr5XgGSYcsQp5Q3YfCEvcVMdYi8bpORDfYBBsbdrFUvnXGYF8eDKdk2p4i0GSh41Uk_efxQ13sskGg3MLaLh02x11_WUnFVK82bwBdlBfpI_Up0WA.webp" width="130" height="130"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/S56rJQsyao9CHi-qQFQCVs5VBShM4vl1GyZaj0-zIT8cf7mV7ECfbr44OIRefJegqolX9VDevktgTN_-XaNPMGuBjFLeKUJt7DJ-NyQ9b8c8MvqS1xrfihknFFGYg2wQIrKujlNQtvUrhzh8JEZ08Q.webp" width="130" height="130"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/gnZYHn5KcJnjMJMyGE9H2QDSSymaIr7_HrYxccBeifxtTp6GN1LVTbxxtAN68qMNJmCAqM4NoeXX3rEjzxWKXjJIHz0sewEqx83vJsJ6qm4OMdVaE_ss33fz_8QFQTFWvh8WlqzsHGEXfTsJymDwxQ.webp" width="130" height="130"/></td>
   </tr>
   <tr>
     <td align="center"><strong>김예원</strong></td>
