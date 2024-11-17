@@ -131,6 +131,33 @@
 ![image](https://github.com/user-attachments/assets/bd275503-df9a-49c7-9a7c-0b66b5002eb5)
 <br>
 
+## 👨‍👩‍👦‍👦 팀원 역할
+<table>
+  <tr>
+    <td align="center"><img src="https://i.namu.wiki/i/a5QpSbzZ5AWsuwcwiTaclCel8slMLZxYOpg3K97dct-fbrnxfSq00Z7CP7aLUNeapp1bW8TjQhdx7-i_EoDoB8mkmJq2G-9VkiD-WWw1ljN1_5bvrrHrLSbnhsPbQ70za4FLt8isRncXA4OtYnoGOg.webp" width="100" height="100"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/cIjZ9AS062NFC_pKl7lnECDfS-LsNdNAVAhrxCr5XgGSYcsQp5Q3YfCEvcVMdYi8bpORDfYBBsbdrFUvnXGYF8eDKdk2p4i0GSh41Uk_efxQ13sskGg3MLaLh02x11_WUnFVK82bwBdlBfpI_Up0WA.webp" width="100" height="100"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/S56rJQsyao9CHi-qQFQCVs5VBShM4vl1GyZaj0-zIT8cf7mV7ECfbr44OIRefJegqolX9VDevktgTN_-XaNPMGuBjFLeKUJt7DJ-NyQ9b8c8MvqS1xrfihknFFGYg2wQIrKujlNQtvUrhzh8JEZ08Q.webp" width="100" height="100"/></td>
+    <td align="center"><img src="https://i.namu.wiki/i/gnZYHn5KcJnjMJMyGE9H2QDSSymaIr7_HrYxccBeifxtTp6GN1LVTbxxtAN68qMNJmCAqM4NoeXX3rEjzxWKXjJIHz0sewEqx83vJsJ6qm4OMdVaE_ss33fz_8QFQTFWvh8WlqzsHGEXfTsJymDwxQ.webp" width="100" height="100"/></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>김예원</strong></td>
+    <td align="center"><strong>김나혜</strong></td>
+    <td align="center"><strong>전정훈</strong></td>
+    <td align="center"><strong>윤한빛</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Backend / Crawling</b></td>
+    <td align="center"><b>PM</b></td>
+    <td align="center"><b>Backend / DB</b></td>
+    <td align="center"><b>Frontend</b></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/happycat139" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/Vicky0729" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/jjeonghun" target='_blank'>github</a></td>
+    <td align="center"><a href="#" target='_blank'>github</a></td>
+  </tr>
+</table>
 
 
 ## 🤾‍♂️ 트러블슈팅
