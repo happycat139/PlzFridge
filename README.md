@@ -155,7 +155,7 @@
     <td align="center"><a href="https://github.com/happycat139" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/Vicky0729" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/jjeonghun" target='_blank'>github</a></td>
-    <td align="center"><a href="#" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/yoon-vit" target='_blank'>github</a></td>
   </tr>
 </table>
 
